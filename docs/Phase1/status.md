@@ -29,7 +29,7 @@ Local test clips are synthetic software fixtures; they establish neither object-
 ### Next steps
 
 1. Confirm Pi OS/architecture/Python output and copy the project to the Pi.
-2. Follow `docs/phase-1.md`: dependencies, camera-only check, detector check, sustained baseline.
+2. Follow `docs/Phase1/guide.md`: dependencies, camera-only check, detector check, sustained baseline.
 3. Record actual run directories, configurations, scene notes, measurements, and failures here.
 4. Begin Phase 2 only after Phase 1's on-Pi completion check is met.
 

@@ -140,4 +140,4 @@ On Windows, use `python` instead of `python3` if that is the interpreter with Op
 - Poor frame rate: share `run.json`, `summary.json`, and `health.jsonl`; benchmark before switching models or reducing settings.
 - Capture stall: this first version has no independent hardware watchdog. Stop it manually and collect the camera logs if frame capture stops returning. It is not a motion-control component.
 
-Phase 1 is complete when Python capture and live detection work on the Pi, a replayable sample and detections are saved, and a sustained run has measured throughput, latency, CPU/RAM use, temperature, and available throttle information. Maintain actual results and remaining issues in `docs/status.md`.
+Phase 1 is complete when Python capture and live detection work on the Pi, a replayable sample and detections are saved, and a sustained run has measured throughput, latency, CPU/RAM use, temperature, and available throttle information. Maintain actual results and remaining issues in `docs/Phase1/status.md`.

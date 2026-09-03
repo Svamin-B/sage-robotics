@@ -14,7 +14,7 @@ class PiCamera:
             from libcamera import controls
         except ImportError as error:
             raise RuntimeError("Live capture requires Picamera2 on Raspberry Pi OS. "
-                               "See docs/phase-1.md; use --video for desktop replay.") from error
+                               "See docs/Phase1/guide.md; use --video for desktop replay.") from error
         self.camera = Picamera2()
         self.lock = threading.Lock()
         self.received = 0
@@ -101,4 +101,3 @@ class VideoFile:
 
     def close(self):
         self.video.release()
-

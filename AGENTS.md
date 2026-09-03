@@ -215,7 +215,14 @@ Bound queues and memory use. Prefer recent observations over accumulating latenc
 
 ## Repository and handoff guidance
 
-At creation of this file, the workspace had no implementation or verified setup. **Phase 1 is now in progress:** the user confirmed a working `rpicam-hello` preview, and a Python capture/detection prototype has been added. On-Pi Python capture and sustained detection measurements are still pending. See `docs/status.md` for current evidence and `docs/phase-1.md` for run instructions. Do not scaffold later phases merely because they appear in this guide.
+**Phase 1 is complete.** Camera capture and MobileNet-SSD detection were verified on the Raspberry Pi, including a fan-cooled five-minute resource and thermal baseline. See `docs/Phase1/status.md` for evidence and `docs/Phase1/guide.md` for the repeatable procedure. Phase 2 is the next implementation milestone. Do not scaffold later phases merely because they appear in this guide.
+
+Organize documentation for each implemented milestone under `docs/PhaseN/`, where `N` is the phase number with no separator (for example, `docs/Phase1/` and `docs/Phase2/`). Each phase directory must contain:
+
+- `guide.md`: the phase question and scope, prerequisites, setup, exact run and replay procedures, expected artifacts, and completion checks. Follow the organization and level of detail established in `docs/Phase1/guide.md`.
+- `status.md`: dated implementation and experiment entries containing configurations, environments, commands when relevant, artifact locations, measurements, observations, limitations, decisions, and the next prerequisite. Follow the evidence-based format established in `docs/Phase1/status.md`.
+
+Create a phase directory only when work on that phase begins. Keep cross-phase architecture and durable project rules in this file; keep changing procedures and results in the applicable phase directory. Update repository links whenever documentation moves.
 
 As files become necessary, a reasonable organization is:
 
