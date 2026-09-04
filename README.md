@@ -4,7 +4,9 @@
 
 SAGE is an indoor robotics project targeting a Raspberry Pi 4 (4 GB) and Camera Module 3 Wide. The subtitle describes the intended system; mapping and navigation are not implemented yet.
 
-**Completed milestone: Phase 1 — camera and live perception.** Camera capture and live MobileNet-SSD detection have been verified on the Raspberry Pi. The fan-cooled sustained baseline processes approximately 2.40 inference frames per second, with 409 ms mean sensor-to-result age, about 249 MB process memory, a 64.27 C peak temperature, and no throttling during a five-minute run. Phase 2 object tracking is the next milestone.
+**Completed milestone: Phase 1 — camera and live perception.** Camera capture and live MobileNet-SSD detection have been verified on the Raspberry Pi. The fan-cooled sustained baseline processes approximately 2.40 inference frames per second, with 409 ms mean sensor-to-result age, about 249 MB process memory, a 64.27 C peak temperature, and no throttling during a five-minute run.
+
+**Current milestone: Phase 2 — object tracking (in progress).** A lightweight class-aware tracker, lifecycle logging, timestamp-correct replay, frame annotation tool, and identity evaluator are implemented. A live detector-plus-tracker run is verified on the Pi; controlled multi-object annotation and the sustained headless comparison remain outstanding. See the [Phase 2 guide](docs/Phase2/guide.md) and [Phase 2 status](docs/Phase2/status.md).
 
 Start with the [Phase 1 setup and run guide](docs/Phase1/guide.md). It covers checking the Pi installation, copying the project, running camera-only capture, adding detection, and saving a baseline. See [project status](docs/Phase1/status.md) for verification evidence and [AGENTS.md](AGENTS.md) for the full roadmap.
 
